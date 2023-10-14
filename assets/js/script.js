@@ -35,12 +35,18 @@ form.addEventListener('submit', function(event){
      } else if (bmi > 35 && bmi <= 40){
         description = 'Cuidado! Você está com obesidade severa!'
         value.classList.add('attention');
-        
+
      } else {
         description = 'Cuidado! Você está com obesidade mórbida!'
         value.classList.add('attention');
      }
-
      value.textContent = bmi;
      document.getElementById('description').textContent = description;
 });
+
+function limparCampos(){
+    const form = document.getElementById('form');
+
+    form.reset();
+    document.getElementById('infos').classList.add('hidden');
+}

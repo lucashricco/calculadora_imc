@@ -25,11 +25,11 @@
 
                 <div class="input-box">
                     <label for="weight">
-                        Digite seu PESO em KG
+                        Digite seu PESO
                     </label>
                     <div class="input-field">
                         <i class="fa-sharp fa-solid fa-weight-hanging"></i>
-                        <input type="number" id="weight" required>   
+                        <input type="number" id="weight" placeholder="000" required>   
                         <span>
                             KG
                         </span>                 
@@ -38,11 +38,11 @@
 
                 <div class="input-box">
                     <label for="height">
-                        Digite sua ALTURA em Metros
+                        Digite sua ALTURA
                     </label>
                     <div class="input-field">
                         <i class="fa-solid fa-ruler"></i>
-                        <input type="number" id="height" step="any" required>   
+                        <input type="number" id="height" step="any" placeholder="0,00" required>   
                         <span>
                             M
                         </span>                 
@@ -51,6 +51,10 @@
 
                 <button id="calculate">
                     Calcular IMC
+                </button>
+
+                <button id="clear" onclick="limparCampos()">
+                    Limpar Campos
                 </button>
 
             </form>
